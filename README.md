@@ -22,7 +22,7 @@ save file and restart xampp.
 You can also skip above 2 steps if setup project in a sub-folder in htdocs. 
 In that case you need to add a .htaccess file in project root. you can copy .htaccess file from public folder and paste that in project root and add below line:
 <code>
-# Remove public URL from the path
+Remove public from laravel app URL
 RewriteCond %{REQUEST_URI} !^/public/
 RewriteRule ^(.*)$ /public/$1 [L,QSA]
 </code>
@@ -41,11 +41,11 @@ DB_PASSWORD=root
 </code>
 
 Now you need to update composer, run migrate, npm install and build.
-Commands:
-C:\xampp\htdocs\todo> composer update
-C:\xampp\htdocs\todo> php artisan migrate
-C:\xampp\htdocs\todo> npm install
-C:\xampp\htdocs\todo> npm run build
-
-Now check your todo app in browser.
+Commands:<br>
+C:\xampp\htdocs\todo> composer update <br>
+C:\xampp\htdocs\todo> php artisan migrate <br>
+C:\xampp\htdocs\todo> npm install <br>
+C:\xampp\htdocs\todo> npm run build <br>
+<br>
+Now check your todo app in browser.<br>
 http://todo.test
